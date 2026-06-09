@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght=400;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen font-['Oxanium']">
+
+<nav class="flex items-center justify-between px-6 py-4 bg-green-950 shadow">
+  <div class="text-3xl font-bold text-yellow-500">Project Antho</div>
+  <button class="md:hidden text-yellow-500 hover:text-blue-600">☰</button>
+  <ul class="hidden md:flex gap-6">
+    <li><a href="#home" class="text-yellow-500 hover:text-blue-600">Home</a></li>
+    <li><a href="#about" class="text-yellow-500 hover:text-blue-600">About</a></li>
+    <li><a href="#download" class="text-yellow-500 hover:text-blue-600">Download</a></li>
+    <li><a href="#contact" class="text-yellow-500 hover:text-blue-600">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="flex-1">
+
+  <section id="home" class="px-6 py-16 bg-amber-900 text-center">
+    <h1 class="text-6xl font-bold text-yellow-500">Welcome to Project Antho</h1>
+    <img src="/Images/Sticker1.png" class="w-100 h-auto mx-auto mt-6" alt="Project Antho Sticker" />
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-green-900 text-center py-16 px-6">
+    <h2 class="text-6xl font-bold text-yellow-500 mb-8">About</h2>
+
+    <!-- Block 1: What is Project Antho -->
+    <div class="max-w-2xl mx-auto mb-8">
+      <h3 class="text-xl font-bold text-yellow-500 border border-yellow-500 rounded-full inline-block p-4">What is Project Antho?</h3>
+      <p class="text-white border border-yellow-500 rounded-xl text-left p-4 mt-4">
+        Project Antho is an upcoming 2D Metroidvania title focused on hardcore, rhythmic parry combat. The game is set in an apocalyptic sci-fi world blended with elements of Khmer culture.
+      </p>
+    </div>
+
+    <!-- Block 2: World Lore -->
+    <div class="max-w-2xl mx-auto mb-8">
+      <h3 class="text-xl font-bold text-yellow-500 border border-yellow-500 rounded-full inline-block p-4">World Lore</h3>
+      <p class="text-white border border-yellow-500 rounded-xl text-left p-4 mt-4">
+        Long ago, a massive disaster destroyed the world. Now, nature and advanced technology have grown together. Dark ruins are filled with glowing plants, high-tech machines, and Khmer-style structures. It is a beautiful but dangerous place to explore.
+      </p>
+    </div>
+
+    <!-- Block 3: Hardcore Rhythmic Combat -->
+    <div class="max-w-2xl mx-auto mb-8">
+      <h3 class="text-xl font-bold text-yellow-500 border border-yellow-500 rounded-full inline-block p-4">Hardcore Rhythmic Combat</h3>
+      <ul class="text-white border border-yellow-500 rounded-xl text-left list-disc list-inside p-4 mt-4 space-y-2">
+        <li><span class="font-bold">Mechanics</span>: Parries (Left, Right, Hold) + Counter Attacks.</li>
+        <li><span class="font-bold">Combat Style</span>: Consistent, fast-paced rhythm fighting.</li>
+        <li><span class="font-bold">The Challenge</span>: Surviving chaotic enemy patterns through pure reflex and precision.</li>
+      </ul>
+    </div>
+
+    <!-- Block 4: Sample Video (With Border and Controlled Aspect Ratio) -->
+    <div class="max-w-2xl mx-auto mt-8">
+      <h3 class="text-xl font-bold text-yellow-500 border border-yellow-500 rounded-full inline-block p-4">Sample Video</h3>
+      
+      <!-- Video Container with yellow border matching your UI design -->
+      <div class="border border-yellow-500 rounded-xl overflow-hidden mt-4 bg-black/40 shadow-lg">
+        <video 
+          class="w-full aspect-video object-cover block" 
+          controls 
+          preload="metadata"
+          poster="/Images/VideoPoster.png"
+        >
+          <source src="/Videos/GameplaySample.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> 
+      </div>
+    </div>
+
+  </section>
+
+  <section id="download" class="px-6 py-16 bg-green-950 text-center">
+    <h2 class="text-6xl font-bold text-yellow-500">Download</h2>
+    <p class="text-white mt-4">Upcoming in 2027! Check this Tiktok for latest News!</p>
+    <img src="/Images/Tiktok.png" class="w-50 h-auto mx-auto mt-6" alt="Tiktok QR Code" />
+    <div class="mt-8">
+        <a href="https://www.tiktok.com/@tobymartinegamedev" class="inline-block bg-yellow-500 text-green-950 font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors duration-300">Follow us on Tiktok</a>
+    </div>
+  </section>
+
+  <section id="contact" class="px-6 py-16 bg-green-900 text-center">
+    <h2 class="text-6xl font-bold text-yellow-500">Contact</h2>
+      <p class="text-white mt-4">You can follow us on Tiktok for the latest updates!</p>
+      <img src="/Images/Tiktok.png" class="w-50 h-auto mx-auto mt-6" alt="Tiktok QR Code" />
+      <div class="mt-8">
+        <a href="https://www.tiktok.com/@tobymartinegamedev" class="inline-block bg-yellow-500 text-green-950 font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors duration-300">Follow us on Tiktok</a>
+      </div>
+  </section>
+
+</main>
+
+<footer class="bg-green-950 text-yellow-500 text-sm text-center py-6">
+  <p>© 2026 Project Antho. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

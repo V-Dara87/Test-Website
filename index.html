@@ -4,107 +4,266 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" crossorigin href="/Test-Website/assets/index-xktscvHh.css">
+  <link rel="stylesheet" crossorigin href="/Test-Website/assets/index-BOpqSMSa.css">
 </head>
 <body class="flex flex-col min-h-screen">
 
 <nav class="flex items-center justify-between px-6 py-4 bg-green-950 shadow relative">
   <div class="text-3xl font-bold text-yellow-500">Project Antho</div>
-  <button id="menu-btn" class="md:hidden text-yellow-500 hover:text-blue-600 text-3xl leading-none" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <button id="menu-btn" class="md:hidden text-yellow-500 hover:text-yellow-600 text-3xl leading-none" aria-label="Toggle menu" aria-expanded="false">☰</button>
   <ul class="hidden md:flex gap-6" id="nav-links">
-    <li><a href="#home" class="text-yellow-500 hover:text-blue-600">Home</a></li>
-    <li><a href="#about" class="text-yellow-500 hover:text-blue-600">About</a></li>
-    <li><a href="#download" class="text-yellow-500 hover:text-blue-600">Download</a></li>
-    <li><a href="#contact" class="text-yellow-500 hover:text-blue-600">Contact</a></li>
+    <li><a href="#home" class="text-yellow-500 hover:text-yellow-600 transition-colors duration-200">Home</a></li>
+    <li><a href="#about" class="text-yellow-500 hover:text-yellow-600 transition-colors duration-200">About</a></li>
+    <li><a href="#gallery" class="text-yellow-500 hover:text-yellow-600 transition-colors duration-200">Gallery</a></li>
+    <li><a href="#download" class="text-yellow-500 hover:text-yellow-600 transition-colors duration-200">Download</a></li>
+    <li><a href="#contact" class="text-yellow-500 hover:text-yellow-600 transition-colors duration-200">Contact</a></li>
   </ul>
 
   <!-- Mobile dropdown menu -->
   <ul id="mobile-menu" class="md:hidden hidden flex-col gap-0 absolute top-full left-0 w-full bg-green-950 shadow-lg z-50 border-t border-yellow-500/30">
-    <li><a href="#home"     class="mobile-link block px-6 py-4 text-yellow-500 hover:bg-green-900 hover:text-blue-400 border-b border-yellow-500/20">Home</a></li>
-    <li><a href="#about"    class="mobile-link block px-6 py-4 text-yellow-500 hover:bg-green-900 hover:text-blue-400 border-b border-yellow-500/20">About</a></li>
-    <li><a href="#download" class="mobile-link block px-6 py-4 text-yellow-500 hover:bg-green-900 hover:text-blue-400 border-b border-yellow-500/20">Download</a></li>
-    <li><a href="#contact"  class="mobile-link block px-6 py-4 text-yellow-500 hover:bg-green-900 hover:text-blue-400">Contact</a></li>
+    <li><a href="#home" class="mobile-link block px-6 py-4 text-yellow-500 hover:bg-green-900 hover:text-yellow-600 border-b border-yellow-500/20 transition-colors duration-200">Home</a></li>
+    <li><a href="#about" class="mobile-link block px-6 py-4 text-yellow-500 hover:bg-green-900 hover:text-yellow-600 border-b border-yellow-500/20 transition-colors duration-200">About</a></li>
+    <li><a href="#gallery" class="mobile-link block px-6 py-4 text-yellow-500 hover:bg-green-900 hover:text-yellow-600 border-b border-yellow-500/20 transition-colors duration-200">Gallery</a></li>
+    <li><a href="#download" class="mobile-link block px-6 py-4 text-yellow-500 hover:bg-green-900 hover:text-yellow-600 border-b border-yellow-500/20 transition-colors duration-200">Download</a></li>
+    <li><a href="#contact" class="mobile-link block px-6 py-4 text-yellow-500 hover:bg-green-900 hover:text-yellow-600 transition-colors duration-200">Contact</a></li>
   </ul>
 </nav>
 
 <main class="flex-1">
 
-  <section id="home" class="px-6 py-16 bg-amber-900 text-center">
-    
-    <p class="text-2xl font-bold text-yellow-500 mb-4 bg-green-900 border-2 border-yellow-500 inline-block p-2 rounded-lg">Steam</p>
-    <h1 class="text-6xl font-bold text-yellow-500">PROJECT ANTHO</h1>
-    <p class="text-2xl font-bold text-yellow-500 mt-4 mb-4">An upcoming 2D Metroidvania title focused on hardcore, rhythmic parry combat.</p>
-    <img src="/Test-Website/Images/Sticker1.png" class="w-100 h-auto mx-auto mt-6" alt="Project Antho Sticker" />
-
-    <div class="flex gap-4 mt-8 justify-center flex-wrap">
-      <a href="https://www.tiktok.com/@tobymartinegamedev" class="inline-block bg-yellow-500 text-green-950 font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors duration-300">Follow us on Tiktok</a>
-      <a href="#about" class="inline-block bg-yellow-500 text-green-950 font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors duration-300">Learn More</a>
+  <!-- Home Section -->
+  <section id="home" class="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden px-6">
+    <video autoplay loop muted playsinline preload="metadata" poster="/Images/VideoPoster.png" class="absolute inset-0 w-full h-full object-cover z-0">
+      <source src="/Test-Website/Video/WebsiteDemo1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
+    <div class="relative z-20 max-w-4xl mx-auto flex flex-col items-center">
+      <p class="text-2xl font-bold text-yellow-500 mb-4 bg-green-900/80 border-2 border-yellow-500 inline-block p-2 rounded-lg backdrop-blur-sm">
+        Steam
+      </p>
+      <h1 class="text-6xl md:text-8xl font-bold text-yellow-500 drop-shadow-lg tracking-wider">
+        PROJECT ANTHO
+      </h1>
+      <p class="text-xl md:text-2xl font-bold text-gray-200 mt-6 mb-8 max-w-2xl drop-shadow">
+        An upcoming 2D Metroidvania title focused on hardcore, rhythmic parry combat.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="https://www.tiktok.com/@tobymartinegamedev" target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-500 text-green-950 font-bold py-3 px-8 rounded-full hover:bg-yellow-600 shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
+          Follow us on TikTok
+        </a>
+        <a href="#about" class="inline-block bg-transparent text-yellow-500 border-2 border-yellow-500 font-bold py-3 px-8 rounded-full hover:bg-yellow-500 hover:text-green-950 shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
+          Learn More
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="bg-green-900 text-center py-16 px-6">
-    <h2 class="text-6xl font-bold text-yellow-500 mb-8">About</h2>
+    <h2 class="text-6xl font-bold text-yellow-500 mb-12">About</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+      <div class="flex flex-col">
+        <h3 class="text-xl font-bold bg-yellow-500 text-green-950 border border-yellow-500 rounded-full inline-block p-4 self-center shadow-md">What is Project Antho?</h3>
+        <p class="text-white border border-yellow-500 rounded-xl text-left p-4 mt-4 flex-1 text-base leading-relaxed">
+          Project Antho is an upcoming 2D Metroidvania title focused on hardcore, rhythmic parry combat. The game is set in an apocalyptic sci-fi world blended with elements of Khmer culture.
+        </p>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="text-xl font-bold bg-yellow-500 text-green-950 border border-yellow-500 rounded-full inline-block p-4 self-center shadow-md">World Lore</h3>
+        <p class="text-white border border-yellow-500 rounded-xl text-left p-4 mt-4 flex-1 text-base leading-relaxed">
+          Long ago, a massive disaster destroyed the world. Now, nature and advanced technology have grown together. Dark ruins are filled with glowing plants, high-tech machines, and Khmer-style structures. It is a beautiful but dangerous place to explore.
+        </p>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="text-xl font-bold bg-yellow-500 text-green-950 border border-yellow-500 rounded-full inline-block p-4 self-center shadow-md">Hardcore Combat</h3>
+        <ul class="text-white border border-yellow-500 rounded-xl text-left list-disc list-inside p-4 mt-4 space-y-2 flex-1">
+          <li><span class="font-bold text-yellow-500">Mechanics:</span> Parries (Left, Right, Hold) + Counter Attacks.</li>
+          <li><span class="font-bold text-yellow-500">Combat Style:</span> Consistent, fast-paced rhythm fighting.</li>
+          <li><span class="font-bold text-yellow-500">The Challenge:</span> Surviving chaotic enemy patterns through pure reflex and precision.</li>
+        </ul>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="text-xl font-bold bg-yellow-500 text-green-950 border border-yellow-500 rounded-full inline-block p-4 self-center shadow-md">Game Details</h3>
+        <ul class="text-white border border-yellow-500 rounded-xl text-left list-none p-4 mt-4 space-y-3 flex-1">
+          <li><span class="font-bold text-yellow-500">Genre:</span> 2D Action Metroidvania / Rhythm Combat</li>
+          <li><span class="font-bold text-yellow-500">Players:</span> 1 Player (Single-player story campaign)</li>
+          <li><span class="font-bold text-yellow-500">Platform:</span> PC (Steam)</li>
+          <li><span class="font-bold text-yellow-500">Input Support:</span> Full Controller & Keyboard support</li>
+        </ul>
+      </div>
+    </div> 
 
-    <!-- Block 1: What is Project Antho -->
-    <div class="max-w-2xl mx-auto mb-8">
-      <h3 class="text-xl font-bold text-yellow-500 border border-yellow-500 rounded-full inline-block p-4">What is Project Antho?</h3>
-      <p class="text-white border border-yellow-500 rounded-xl text-left p-4 mt-4">
-        Project Antho is an upcoming 2D Metroidvania title focused on hardcore, rhythmic parry combat. The game is set in an apocalyptic sci-fi world blended with elements of Khmer culture.
-      </p>
+    <div class="flex flex-col max-w-6xl mx-auto mt-12">
+      <h3 class="text-xl font-bold bg-yellow-500 text-green-950 border border-yellow-500 rounded-full inline-block p-4 self-center shadow-md">System Requirements</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 border border-yellow-500 rounded-xl p-6 text-left text-white">
+        <div>
+          <h4 class="text-lg font-bold text-yellow-500 mb-3 border-b border-yellow-500/30 pb-1">Minimum Specifications</h4>
+          <ul class="space-y-1.5 text-sm">
+            <li><span class="font-bold text-yellow-500">OS:</span> Windows 10 (64-bit)</li>
+            <li><span class="font-bold text-yellow-500">Processor:</span> Intel Core i3 / AMD FX-4350</li>
+            <li><span class="font-bold text-yellow-500">Memory:</span> 4 GB RAM</li>
+            <li><span class="font-bold text-yellow-500">Graphics:</span> Nvidia GTX 650 / AMD Radeon HD 7750 (1GB VRAM)</li>
+            <li><span class="font-bold text-yellow-500">DirectX:</span> Version 11</li>
+            <li><span class="font-bold text-yellow-500">Storage:</span> 2 GB available space</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-yellow-500 mb-3 border-b border-yellow-500/30 pb-1">Recommended Specifications</h4>
+          <ul class="space-y-1.5 text-sm">
+            <li><span class="font-bold text-yellow-500">OS:</span> Windows 10/11 (64-bit)</li>
+            <li><span class="font-bold text-yellow-500">Processor:</span> Intel Core i5 / AMD Ryzen 3</li>
+            <li><span class="font-bold text-yellow-500">Memory:</span> 8 GB RAM</li>
+            <li><span class="font-bold text-yellow-500">Graphics:</span> Nvidia GTX 1050 Ti / AMD RX 560 (2GB VRAM)</li>
+            <li><span class="font-bold text-yellow-500">DirectX:</span> Version 11</li>
+            <li><span class="font-bold text-yellow-500">Storage:</span> 2 GB available space (SSD Recommended)</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Block 2: World Lore -->
-    <div class="max-w-2xl mx-auto mb-8">
-      <h3 class="text-xl font-bold text-yellow-500 border border-yellow-500 rounded-full inline-block p-4">World Lore</h3>
-      <p class="text-white border border-yellow-500 rounded-xl text-left p-4 mt-4">
-        Long ago, a massive disaster destroyed the world. Now, nature and advanced technology have grown together. Dark ruins are filled with glowing plants, high-tech machines, and Khmer-style structures. It is a beautiful but dangerous place to explore.
-      </p>
+  <!-- Gallery Section -->
+  <section id="gallery" class="bg-green-950 py-16 px-6 text-center">
+    <h2 class="text-6xl font-bold text-yellow-500 mb-12">Gallery</h2>
+    
+    <div class="max-w-6xl mx-auto space-y-12">
+      <!-- Gameplay Gameplay Video Showcases -->
+      <div>
+        <h3 class="text-2xl font-bold text-yellow-500 mb-6 tracking-wide uppercase">Gameplay Showcases</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Video 1 -->
+          <div class="border border-yellow-500/30 rounded-xl overflow-hidden bg-green-900/20 shadow-lg">
+            <video controls preload="metadata" class="w-full aspect-video object-cover">
+              <source src="/Test-Website/Video/WebsiteDemo1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="p-3 bg-green-900/40 text-sm text-gray-300 font-bold border-t border-yellow-500/20">
+              Gameplay Preview 01
+            </div>
+          </div>
+          <!-- Video 2 -->
+          <div class="border border-yellow-500/30 rounded-xl overflow-hidden bg-green-900/20 shadow-lg">
+            <video controls preload="metadata" class="w-full aspect-video object-cover">
+              <source src="/Test-Website/Video/WebsiteDemo2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="p-3 bg-green-900/40 text-sm text-gray-300 font-bold border-t border-yellow-500/20">
+              Gameplay Preview 02
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Character & Assets Stickers Layout -->
+      <div class="pt-6">
+        <h3 class="text-2xl font-bold text-yellow-500 mb-6 tracking-wide uppercase">Character Assets & Sketches</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <!-- Sticker 1 -->
+          <div class="border border-yellow-500/30 rounded-xl p-4 bg-green-900/10 flex flex-col justify-between items-center group hover:border-yellow-500 transition-all duration-300 shadow-md">
+            <div class="w-full aspect-square flex items-center justify-center overflow-hidden rounded-lg">
+              <img src="/Test-Website/Images/Sticker1.png" class="max-w-full max-h-full object-contain transform group-hover:scale-105 transition-transform duration-300" alt="Game Asset Sticker 1" />
+            </div>
+            <div class="mt-3 text-sm text-gray-400 font-bold">Asset Design 01</div>
+          </div>
+          <!-- Sticker 2 -->
+          <div class="border border-yellow-500/30 rounded-xl p-4 bg-green-900/10 flex flex-col justify-between items-center group hover:border-yellow-500 transition-all duration-300 shadow-md">
+            <div class="w-full aspect-square flex items-center justify-center overflow-hidden rounded-lg">
+              <img src="/Test-Website/Images/Sticker2.png" class="max-w-full max-h-full object-contain transform group-hover:scale-105 transition-transform duration-300" alt="Game Asset Sticker 2" />
+            </div>
+            <div class="mt-3 text-sm text-gray-400 font-bold">Asset Design 02</div>
+          </div>
+          <!-- Sticker 3 -->
+          <div class="border border-yellow-500/30 rounded-xl p-4 bg-green-900/10 flex flex-col justify-between items-center group hover:border-yellow-500 transition-all duration-300 shadow-md">
+            <div class="w-full aspect-square flex items-center justify-center overflow-hidden rounded-lg">
+              <img src="/Test-Website/Images/Sticker3.png" class="max-w-full max-h-full object-contain transform group-hover:scale-105 transition-transform duration-300" alt="Game Asset Sticker 3" />
+            </div>
+            <div class="mt-3 text-sm text-gray-400 font-bold">Asset Design 03</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Block 3: Hardcore Rhythmic Combat -->
-    <div class="max-w-2xl mx-auto mb-8">
-      <h3 class="text-xl font-bold text-yellow-500 border border-yellow-500 rounded-full inline-block p-4">Hardcore Rhythmic Combat</h3>
-      <ul class="text-white border border-yellow-500 rounded-xl text-left list-disc list-inside p-4 mt-4 space-y-2">
-        <li><span class="font-bold">Mechanics</span>: Parries (Left, Right, Hold) + Counter Attacks.</li>
-        <li><span class="font-bold">Combat Style</span>: Consistent, fast-paced rhythm fighting.</li>
-        <li><span class="font-bold">The Challenge</span>: Surviving chaotic enemy patterns through pure reflex and precision.</li>
-      </ul>
-    </div>
+  <!-- Download & Roadmap Section -->
+  <section id="download" class="px-6 py-16 bg-green-900 text-center">
+    <h2 class="text-6xl font-bold text-yellow-500 mb-4">Download</h2>
+    <p class="text-gray-300 max-w-2xl mx-auto mb-10">
+      Project Antho is currently in active development. Check out our timeline and follow our social channels to catch upcoming alpha tests!
+    </p>
 
-    <!-- Block 4: Sample Video -->
-    <div class="max-w-2xl mx-auto mt-8">
-      <h3 class="text-xl font-bold text-yellow-500 border border-yellow-500 rounded-full inline-block p-4">Sample Video</h3>
-      <div class="border border-yellow-500 rounded-xl overflow-hidden mt-4 bg-black/40 shadow-lg">
-        <video
-          class="w-full aspect-video object-cover block"
-          controls
-          preload="metadata"
-          poster="/Images/VideoPoster.png"
-        >
-          <source src="/Videos/GameplaySample.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+    <!-- Roadmap Tracker -->
+    <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-4 mb-12 text-white">
+      <div class="border border-yellow-500/30 bg-green-950/40 p-4 rounded-xl opacity-60">
+        <div class="text-sm text-yellow-500 font-bold mb-1">Phase 1</div>
+        <div class="font-bold text-base">Prototyping</div>
+        <p class="text-xs text-gray-400 mt-1">Core mechanics & parry system framework.</p>
+      </div>
+      <div class="border border-yellow-500 bg-green-950/60 p-4 rounded-xl relative shadow-lg">
+        <span class="absolute -top-2.5 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-green-950 text-[10px] uppercase font-bold px-2 py-0.5 rounded-full tracking-wider">Active</span>
+        <div class="text-sm text-yellow-500 font-bold mb-1">Phase 2</div>
+        <div class="font-bold text-base">Alpha Production</div>
+        <p class="text-xs text-gray-300 mt-1">Level layout, animations, and sound integration.</p>
+      </div>
+      <div class="border border-yellow-500/30 bg-green-950/40 p-4 rounded-xl opacity-60">
+        <div class="text-sm text-yellow-500 font-bold mb-1">Phase 3</div>
+        <div class="font-bold text-base">Beta Testing</div>
+        <p class="text-xs text-gray-400 mt-1">Community balancing, polish, and optimization.</p>
+      </div>
+      <div class="border border-yellow-500/30 bg-green-950/40 p-4 rounded-xl opacity-60">
+        <div class="text-sm text-yellow-500 font-bold mb-1">Phase 4</div>
+        <div class="font-bold text-base">Official Launch</div>
+        <p class="text-xs text-gray-400 mt-1">Targeting PC release via Steam in 2027.</p>
       </div>
     </div>
 
-  </section>
-
-  <section id="download" class="px-6 py-16 bg-green-950 text-center">
-    <h2 class="text-6xl font-bold text-yellow-500">Download</h2>
-    <p class="text-white mt-4">Upcoming in 2027! Check this Tiktok for latest News!</p>
-    <img src="/Test-Website/Images/Tiktok.png" class="w-50 h-auto mx-auto mt-6" alt="Tiktok QR Code" />
-    <div class="mt-8">
-      <a href="https://www.tiktok.com/@tobymartinegamedev" class="inline-block bg-yellow-500 text-green-950 font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors duration-300">Follow us on Tiktok</a>
+    <!-- Steam Card Placeholder -->
+    <div class="max-w-md mx-auto border-2 border-dashed border-yellow-500/40 bg-green-950/20 rounded-2xl p-6 text-white mb-6">
+      <div class="text-yellow-500 text-4xl mb-2">🎮</div>
+      <h3 class="font-bold text-xl tracking-wide">Steam Store Page</h3>
+      <p class="text-sm text-gray-400 mt-1">Wishlisting will be available soon. Stay tuned!</p>
     </div>
   </section>
 
-  <section id="contact" class="px-6 py-16 bg-green-900 text-center">
-    <h2 class="text-6xl font-bold text-yellow-500">Contact</h2>
-    <p class="text-white mt-4">You can follow us on Tiktok for the latest updates!</p>
-    <img src="/Test-Website/Images/Tiktok.png" class="w-50 h-auto mx-auto mt-6" alt="Tiktok QR Code" />
-    <div class="mt-8">
-      <a href="https://www.tiktok.com/@tobymartinegamedev" class="inline-block bg-yellow-500 text-green-950 font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors duration-300">Follow us on Tiktok</a>
+  <!-- Contact & Community Section -->
+  <section id="contact" class="px-6 py-16 bg-green-950 text-center">
+    <h2 class="text-6xl font-bold text-yellow-500 mb-4">Contact</h2>
+    <p class="text-gray-200 max-w-xl mx-auto mb-10">
+      Have questions, business inquiries, or want to follow the development journey closely? Get in touch!
+    </p>
+
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- QR and Community Info -->
+      <div class="bg-green-900/30 p-6 border border-yellow-500 rounded-xl flex flex-col items-center">
+        <h3 class="text-yellow-500 font-bold text-xl mb-2">Community Devlogs</h3>
+        <p class="text-sm text-gray-300 text-center mb-4">Scan or click to see daily gameplay adjustments, animation frame breakdowns, and mechanics updates.</p>
+        <img src="/Test-Website/Images/Tiktok.png" class="w-40 h-auto rounded-lg border border-yellow-500/20" alt="Tiktok QR Code" />
+        <a href="https://www.tiktok.com/@tobymartinegamedev" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-yellow-500 text-green-950 font-bold py-2.5 px-6 rounded-full hover:bg-yellow-600 transition-colors duration-300 text-sm">
+          Follow @tobymartinegamedev
+        </a>
+      </div>
+
+      <!-- Professional/Inquiry Card -->
+      <div class="bg-green-900/30 p-6 border border-yellow-500 rounded-xl h-full flex flex-col justify-center text-left text-white">
+        <h3 class="text-yellow-500 font-bold text-xl mb-4 text-center md:text-left">Inquiries & Feedback</h3>
+        <p class="text-sm text-gray-300 mb-6 leading-relaxed">
+          For professional inquiries, development feedback, or collaborative interest, feel free to reach out via our contact channels.
+        </p>
+        <div class="space-y-4 text-sm">
+          <div class="flex items-center gap-3">
+            <span class="text-yellow-500 font-bold w-16 uppercase text-xs tracking-wider">Email:</span>
+            <a href="mailto:contact@projectantho.com" class="text-gray-300 hover:text-yellow-500 underline transition-colors">contact@projectantho.com</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-yellow-500 font-bold w-16 uppercase text-xs tracking-wider">Discord:</span>
+            <span class="text-gray-400 italic">Official Server Coming Soon</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-yellow-500 font-bold w-16 uppercase text-xs tracking-wider">Press:</span>
+            <span class="text-gray-400 italic">Press kit available upon alpha stage</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
